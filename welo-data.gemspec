@@ -4,8 +4,8 @@ require File.expand_path('../lib/welo-data/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["crapooze"]
   gem.email         = ["crapooze@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{data persisters and fetchers for welo resources}
+  gem.summary       = %q{easily expose or save welo resources}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
