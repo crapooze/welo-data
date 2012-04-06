@@ -51,7 +51,7 @@ module Welo::Data
 
       def get_url(klass, url)
         hash = http_get url
-        generate hash if hash
+        generate(klass, hash) if hash
       end
 
       def post(res, persp=:default, identifier=:default)
