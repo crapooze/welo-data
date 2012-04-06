@@ -7,10 +7,6 @@ module Welo::Data
       true
     end
 
-    def read
-      klass.read link
-    end
-
     def path(*val)
       link
     end
