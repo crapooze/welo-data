@@ -1,6 +1,22 @@
 # Welo::Data
 
-TODO: Write a gem description
+Welo::Data is a library for Welo persisting and retriving Welo resources.
+Welo::Data overloads initialize, hence you should not inject Welo::Data::Resource in an object unless you know what you're doing.
+
+Within Welo, all resources are identified by their path.
+
+Welo::Data resources do not have all the semantics you may dream of when
+building an application with lots of searches, but it fits well cases where you
+create/pick/save/delete items one by one.
+
+Welo::Data ships with (simple) adapaters for:
+- em-redis
+- em-mongodb
+- em-http-request
+
+These adapters use EventMachine and Fiber.
+A minimal knowledge of these is preferred but not mandatory.
+
 
 ## Installation
 
@@ -18,7 +34,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Please have a look at examples in ./samples/
 
 ## Contributing
 
